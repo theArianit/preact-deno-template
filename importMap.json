@@ -1,13 +1,13 @@
 {
   "imports": {
     "oak": "https://deno.land/x/oak@v10.6.0/mod.ts",
-    "preact": "https://esm.sh/preact@10.11.0",
-    "preact/": "https://esm.sh/preact@10.11.0/",
+    "preact": "https://esm.sh/preact@10.11.2",
+    "preact/": "https://esm.sh/preact@10.11.2/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1",
-    "react-dom": "https://esm.sh/preact@10.11.0/compat",
-    "react-dom/": "https://esm.sh/preact@10.11.0/compat/",
+    "react-dom": "https://esm.sh/preact@10.11.2/compat",
+    "react-dom/": "https://esm.sh/preact@10.11.2/compat/",
     "esbuild": "https://esm.sh/esbuild-wasm@0.15.12",
     "denoPlugin": "https://deno.land/x/esbuild_deno_loader@0.6.0/mod.ts"
   }
