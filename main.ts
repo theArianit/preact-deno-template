@@ -1,11 +1,9 @@
 import { Application } from "oak";
-// import { esbuild } from "esbuild";
 import * as esbuild from "esbuild";
-// import * as esbuild from "https://esm.sh/esbuild-wasm@0.15.9";
 import { denoPlugin } from "denoPlugin";
 
 
-// Transpile jsx to js for React.
+// Transpile jsx to js for Preact.
 await esbuild.initialize({
   wasmURL: "https://esm.sh/esbuild-wasm/esbuild.wasm",
   worker: false,
@@ -20,6 +18,7 @@ const output = await esbuild.build({
 });
 // The raw transpiled output as a string.
 const indexJs = new TextDecoder().decode(output.outputFiles[0].contents);
+esbuild.stop();
 
 // Setup server.
 const app = new Application();
