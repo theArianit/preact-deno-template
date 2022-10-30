@@ -2,13 +2,13 @@ import { Application } from "oak";
 import * as esbuild from "esbuild";
 import { denoPlugin } from "denoPlugin";
 
-
 // Transpile jsx to js for Preact.
-await esbuild.initialize({
+await esbuild.default.initialize({
   wasmURL: "https://esm.sh/esbuild-wasm/esbuild.wasm",
   worker: false,
 });
-const output = await esbuild.build({
+
+const output = await esbuild.default.build({
   plugins: [denoPlugin()],
   entryPoints: ["./src/index.tsx"],
   write: false,
@@ -18,7 +18,7 @@ const output = await esbuild.build({
 });
 // The raw transpiled output as a string.
 const indexJs = new TextDecoder().decode(output.outputFiles[0].contents);
-esbuild.stop();
+// esbuild.stop();
 
 // Setup server.
 const app = new Application();
