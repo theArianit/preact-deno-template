@@ -10,7 +10,7 @@ await esbuild.default.initialize({
 
 const output = await esbuild.default.build({
   plugins: [denoPlugin()],
-  entryPoints: ["./src/index.tsx"],
+  entryPoints: ["./client.tsx"],
   write: false,
   bundle: true,
   format: "esm",

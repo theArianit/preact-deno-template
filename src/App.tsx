@@ -1,10 +1,14 @@
 import { h, render, Component } from "preact";
+import { Router, Route } from "router";
+import { Home } from "./pages/Home.tsx";
 
-export class App extends Component{
+export default class App extends Component{
   render(){
     return(
       <div>
-        <h1>Hello Preact</h1>
+        <Router>
+          <Home path="/" />
+        </Router>
       </div>
     );
   }

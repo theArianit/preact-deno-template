@@ -1,6 +1,4 @@
-// for client side hydration
-
 import { hydrate } from "preact";
-import App from "./src/components/app.tsx";
+import App from "./src/App.tsx";
 
 hydrate(<App />, document);
