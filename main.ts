@@ -32,7 +32,7 @@ app.use((ctx) => {
         <title>Preact Deno Template</title>
       </head>
       <body>
-        <div id="app" />
+        <div id="app"></div>
         <script>${indexJs}</script>
       </body>
     </html>
