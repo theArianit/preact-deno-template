@@ -4,7 +4,7 @@
 
 <p>client.ts -> <a href="https://preactjs.com/guide/v10/api-reference/#hydrate">what it is for </a>
 
-<br>  
+<br />  
 <h2>Things still open and needs to be done</h2>
 <ol>
   <li>Make this template run</li>
